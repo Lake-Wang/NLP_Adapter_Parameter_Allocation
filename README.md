@@ -22,18 +22,6 @@ The MAM Adapter combines:
 Allocation ratio = (Prefix-Tuning params) / (Total tunable params)  
 Tunable budget = (Tunable params) / (Total model params)
 
-       ┌────────────────────┐
-       │ Pretrained BERT   │
-       └─────────┬──────────┘
-                 ↓
-   ┌──────────────────────────────┐
-   │ Add Prefix-Tuning in MHA     │
-   └─────────┬─────────┬──────────┘
-             ↓         ↓
- FFN ← Add Scaled Parallel Adapter
-             ↓
-         Output logits
-
 
 ## 📊 Evaluation Results
 
